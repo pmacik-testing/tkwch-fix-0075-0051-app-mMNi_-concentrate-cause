@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-zhza
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0051-tenant/tkwch-fix-0075-0051-app/devfile-sample-zhza@sha256:b0738d6dc3b0f7d76a203086261e3f54dd26b847952d4e607e387c0d0014cf54
+        name: my-nodejs
+        resources: {}
+status: {}
